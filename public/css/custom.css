@@ -1,0 +1,62 @@
+/* Khai báo chung */
+.mb15{
+    margin-bottom: 15px;
+}
+.uk-flex-space-between{
+    -ms-flex-pack: justify;
+    -webkit-justify-content:space-between;
+    justify-content: space-between;
+}
+.uk-flex-middle{
+    -ms-flex-align: center;
+    -webkit-aligm-items:center;
+    align-items: center;
+}
+.uk-flex{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    gap: 10px;
+}
+input{
+    width: 100%;
+    outline: none;
+    height: 33px;
+    border: 1px solid #dddddd;
+}
+.select2-container .select2-selection--single{
+    height: 33px;
+}
+td, th, table{
+    border: 1px solid rgb(219, 219, 219);
+}
+table strong{
+    min-width: 80px;
+    display: inline-block;
+    color: #000;
+}
+.img-cover img{
+    width: 50px;
+    height: 100%;
+    object-fit: cover;
+}
+.btn-success, .btn-danger{
+    padding: 5px;
+}
+/* filter*/
+.filter{
+    margin-bottom: 10px;
+}
+.filter .perpage{
+    display: inline-block;
+}
+
+.box .ibox{
+    box-shadow: 11px 4px 4px 1px #dddddd;
+}
+.panel-title{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #000;
+}
