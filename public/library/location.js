@@ -29,12 +29,16 @@
                 dataType: 'json', // Kiểu dữ liệu trả về trên máy chủ 
                 success: function(res) {
                    $('.'+option.target).html(res.html);
+
+                    console.log(district_id);
+
                    if(district_id != '' &&  option.target == 'districts'){
                     $(".districts").val(district_id).trigger('change')
                     
                 }
                 if(ward_id != '' &&  option.target == 'wards'){
-                    $(".wards").val(ward_id).trigger('change')
+                    console.log(ward_id)
+                    $(".wards").val(ward_id)
                     
                 }
                 },

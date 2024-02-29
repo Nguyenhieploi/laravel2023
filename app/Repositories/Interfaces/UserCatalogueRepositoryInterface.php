@@ -2,10 +2,10 @@
 namespace App\Repositories\Interfaces;
 
 /**
- * Interface UserServiceInterface
+ * Interface UserCatalogueServiceInterface
  * @package App\Services\Interfaces
  */
-interface UserRepositoryInterface
+interface UserCatalogueRepositoryInterface
 {
 //  Đại diện cho tất cả repository, khi muon sử dụng phải khai báo ở đây
   

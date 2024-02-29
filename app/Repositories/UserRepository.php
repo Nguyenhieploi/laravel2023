@@ -16,8 +16,8 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface
    {
         $this->model = $model;
    }
-    // File xử lý chi tiết User để cho file UserController nhận giá trị
-    public function getAllPaginate(){
-        return User::paginate(15);
-    }
+
+    
+    
 }
+

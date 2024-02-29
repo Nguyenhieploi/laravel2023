@@ -1,4 +1,4 @@
-@include('user.component.breadcrumb',['title' => $config['seo']['create']['title']])
+@include('user.user.component.breadcrumb',['title' => $config['seo']['create']['title']])
 
 
 @if ($errors->any())
@@ -11,8 +11,11 @@
     </div>
 @endif
 
-
-<form action="{{route('user.store')}}" class="box" method="post">
+@php
+  
+    $url = ($config['method'] == 'create' ? route('user.store') : route('user.update',$user->id));
+@endphp
+<form action="{{$url}}" class="box" method="post">
     @csrf
     <div class="wrapper wrapper-content animated fadeInRight">
         <div class="row">
@@ -62,12 +65,13 @@
                                     </select>
                                 </div>
                             </div>
+                            
                             <div class="col-lg-6">
                                 <div class="form-row">
                                     <label for="" class="control-label text-right">Ngày sinh</label>
                                     <input type="date" 
                                         name="birthday" 
-                                        value="{{ old('birthday', ($user->birthday) ? date('Y-m-d', strtotime($user->birthday)) : '') }}" 
+                                        value="{{ old('birthday', (isset($user->birthday)) ? date('Y-m-d', strtotime($user->birthday)) : '') }}" 
                                         placeholder="Nhập Ngày sinh" 
                                         autocomplete="off">
                                 </div>

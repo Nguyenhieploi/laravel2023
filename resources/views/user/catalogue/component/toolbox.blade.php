@@ -6,10 +6,9 @@
         <i class="fa fa-wrench"></i>
     </a>
     <ul class="dropdown-menu dropdown-user">
-        <li><a href="#">Config option 1</a>
+        <li><a href="#" class="changeStatusAll" data-field="publish" data-model="UserCatalogue" data-value="1">Xuất bản </a>
         </li>
-        <li><a href="#">Config option 2</a>
-        </li>
+        <li><a href="#" class="changeStatusAll" data-field="publish" data-model="UserCatalogue" data-value="0">Không xuất bản toàn bộ </a>
     </ul>
     <a class="close-link">
         <i class="fa fa-times"></i>

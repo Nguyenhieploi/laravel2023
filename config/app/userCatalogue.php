@@ -3,16 +3,16 @@
 return [
     //Sử dụng cho file index.blade.php cho trang QL user
     'index'=>[
-        'title' => 'Quản lý thành viên',
-        'table' => 'Danh sách thành viên'
+        'title' => 'Quản lý nhóm thành viên',
+        'table' => 'Danh sách nhóm thành viên'
     ],
 
     // Tạo mới user 
     'create'=>[
-        'title' => 'Thêm mới thành viên',
+        'title' => 'Thêm mới nhóm thành viên',
     ],
     'delete'=>[
-        'title' => 'Xóa thành viên',
+        'title' => 'Xóa nhóm thành viên',
     ],
     
    

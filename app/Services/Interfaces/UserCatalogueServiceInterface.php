@@ -2,10 +2,10 @@
 namespace App\Services\Interfaces;
 
 /**
- * Interface UserServiceInterface
+ * Interface UserCatalogueServiceInterface
  * @package App\Services\Interfaces
  */
-interface UserServiceInterface
+interface UserCatalogueServiceInterface
 {
 //  Đại diện cho tất cả service, khi muon sử dụng phải khai báo ở đây
     public function paginate($request);
